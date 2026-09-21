@@ -58,8 +58,21 @@ The project includes a series of analytical tasks covering different aspects of 
 - High Value customers represent a smaller share of the customer base but contribute a higher share of total revenue.
 - Japan has the highest average revenue per customer and the highest share of High Value customers.
 - Customer value distribution is relatively consistent across countries.
-## Project Structure
+## Dashboard
 
+The project includes an interactive Google Sheets dashboard
+summarizing key customer and revenue metrics.
+
+The dashboard includes:
+
+- Total customers
+- Total revenue
+- Average revenue per customer
+- High Value customer share
+- Revenue by country
+- Average revenue per customer by country
+- Customer value distribution by country
+## Project Structure
 ```text
 starlink-google-sheets-analytics/
 ├── analysis/
