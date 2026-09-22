@@ -48,6 +48,8 @@ The project includes a series of analytical tasks covering different aspects of 
 11. Customer segment distribution by country
 12. Revenue contribution by country
 13. Customer signups by month
+14. Subscription plan mix by country
+15. Revenue share vs customer share by country
 ## Key Findings
 
 - Customer distribution is relatively even across countries, with a maximum difference of approximately 10%.
