@@ -91,6 +91,8 @@ starlink-google-sheets-analytics/
 │   ├── task-11-customer-segment-distribution.md
 │   ├── task-12-revenue-contribution-by-country.md
 │   └── task-13-customer-signups-by-month.md
+│   └── task-14-subscription-plan-mix-by-country.md
+│   └── task-15-revenue-share-vs-customer-share-by-country.md
 ├── data/
 │   ├── starlink_customers.csv
 │   └── subscriptions.csv
