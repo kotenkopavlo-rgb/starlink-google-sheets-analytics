@@ -1,58 +1,208 @@
 # Starlink Customer & Revenue Analytics
 
-Data analytics portfolio project built with Google Sheets using a simulated Starlink customer dataset.
+Customer and revenue analytics portfolio project built with Google Sheets and Power BI.
+
+The project analyzes a simulated Starlink customer and subscription dataset and demonstrates practical data analysis skills, including data cleaning, business analysis, spreadsheet analytics, data modeling, Power Query, and DAX.
+
+---
+
 ## Project Overview
 
-This project analyzes a simulated Starlink customer dataset to identify patterns in customer distribution, revenue, subscription plans, discounts, and customer value.
+The goal of the project is to analyze customer behavior, subscription plans, revenue, discounts, and customer value across different countries.
 
-The analysis was performed using Google Sheets, with SQL-style analytical approaches and spreadsheet functions.
+The analysis follows a typical Data Analyst workflow:
+
+**Business Question → Data → Analysis → Validation → Insight → Conclusion**
+
+The project contains 15 analytical tasks, a Google Sheets dashboard, and an interactive Power BI dashboard.
+
+---
+
 ## Dataset
 
-The dataset contains 10,001 simulated customers across 10 countries.
+The project uses two related simulated datasets:
 
-The analysis uses two related datasets:
+- `starlink_customers.csv`
+- `subscriptions.csv`
 
-- `starlink_customers.csv` — customer information, including country and customer ID.
-- `subscriptions.csv` — subscription plans, monthly fees, discounts, and customer IDs.
+### Dataset characteristics
 
-The datasets are linked using the customer ID.
+- 10,001 customers
+- 10 countries
+- Multiple subscription plans
+- Customer revenue data
+- Discount information
+- Customer status
+- Contract/sign-up dates
+
+The two datasets are connected through the customer ID.
+
+---
+
 ## Tools & Skills
 
-- Google Sheets
-- SQL-style data analysis
+### Google Sheets
+
 - QUERY
 - XLOOKUP
 - ARRAYFORMULA
 - SUMIF / SUMIFS
 - COUNTIF / COUNTIFS
+- AVERAGEIF
 - FILTER
 - UNIQUE
 - SORT
-- Data segmentation
+- Pivot Tables
+- Data validation
 - Data visualization
-- Business analysis
+- Dashboard creation
 
-## Power BI Dashboard
-
-The project includes an interactive Power BI dashboard built on the Starlink customer and subscription datasets.
-
-### Power BI Skills
+### Power BI
 
 - Power BI Desktop
 - Data Modeling
+- Relationships
+- Power Query
+- DAX
+- Filter Context
+- CALCULATE
+- ALL / REMOVEFILTERS
+- SUMX / AVERAGEX
+- FILTER
+- KPI Cards
+- Slicers
+- Interactive dashboards
+
+### SQL-style Analysis
+
+The analytical approach is also based on SQL concepts such as:
+
+- GROUP BY
+- Aggregations
+- Filtering
+- JOIN logic
+- Revenue analysis
+- Customer segmentation
+- Business-oriented analytical questions
+
+---
+
+# Analysis
+
+The project contains 15 analytical tasks.
+
+1. [Customer Distribution by Country](analysis/task-01-customer-distribution.md)
+2. [Revenue by Country](analysis/task-02-revenue-by-country.md)
+3. [Average Revenue by Country](analysis/task-03-average-revenue-by-country.md)
+4. [Revenue by Subscription Plan](analysis/task-04-revenue-by-subscription-plan.md)
+5. [Discount Analysis](analysis/task-05-discount-analysis.md)
+6. [Customer Value by Plan](analysis/task-06-customer-value-by-plan.md)
+7. [Discount Effectiveness](analysis/task-07-discount-effectiveness.md)
+8. [Customer Segmentation](analysis/task-08-customer-segmentation.md)
+9. [Country & Customer Value](analysis/task-09-country-customer-value.md)
+10. [Customer Value Visualization](analysis/task-10-customer-value-visualization.md)
+11. [Customer Segment Distribution](analysis/task-11-customer-segment-distribution.md)
+12. [Revenue Contribution by Country](analysis/task-12-revenue-contribution-by-country.md)
+13. [Customer Sign-ups by Month](analysis/task-13-customer-signups-by-month.md)
+14. [Subscription Plan Mix by Country](analysis/task-14-subscription-plan-mix-by-country.md)
+15. [Revenue Share vs Customer Share](analysis/task-15-revenue-share-vs-customer-share-by-country.md)
+
+---
+
+# Key Findings
+
+### Customer Distribution
+
+Customer distribution across countries is relatively balanced, with the difference between countries being approximately 10%.
+
+### Revenue by Country
+
+Spain generates the highest total revenue at approximately **$111.8K**, followed by the United States.
+
+### Subscription Plans
+
+The **Residential** plan generates the highest total revenue due to its large customer base.
+
+The **Business** plan generates the highest average revenue per customer.
+
+| Plan | Customers | Revenue | Avg. Revenue |
+|---|---:|---:|---:|
+| Residential | 5,959 | $652,512 | $109.50 |
+| Business | 1,019 | $232,788 | $228.49 |
+| Roam | 2,078 | $151,524 | $72.92 |
+| Mini | 944 | $43,110 | $45.67 |
+
+### Discounts
+
+Customers without a discount have the highest average revenue per customer.
+
+- No discount: **$118.91**
+- Small discount: **$111.38**
+- Large discount: **$100.84**
+
+The available dataset does not contain retention or upgrade history, so the long-term effectiveness of discounts cannot be determined from this analysis alone.
+
+### Customer Segmentation
+
+Customers were divided into three value segments:
+
+- Low Value: < $100
+- Medium Value: $100–$199.99
+- High Value: ≥ $200
+
+High Value customers represent approximately **10% of the customer base** but contribute approximately **21.5% of total revenue**.
+
+### Country Analysis
+
+Japan has the highest average revenue per customer and the highest share of High Value customers.
+
+At the same time, Spain generates the highest total revenue because of its customer base and revenue per customer.
+
+### Revenue Share vs Customer Share
+
+Revenue share and customer share are closely aligned across countries, with differences generally below one percentage point.
+
+---
+
+# Google Sheets Dashboard
+
+The Google Sheets analysis includes an interactive dashboard with:
+
+- Total Customers
+- Total Revenue
+- Average Revenue per Customer
+- High Value Customer Share
+- Revenue by Country
+- Average Revenue per Customer by Country
+- Customer Value Distribution by Country
+
+The complete workbook is available here:
+
+[Starlink Analytics Workbook](google-sheets/Starlink_Analytics.xlsx)
+
+---
+
+# Power BI Dashboard
+
+The project also includes an interactive Power BI dashboard built using the same customer and subscription datasets.
+
+### Power BI Skills Demonstrated
+
+- Data Modeling
+- Relationships
 - Power Query
 - DAX
 - Filter Context
 - CALCULATE
 - SUMX / AVERAGEX
 - FILTER
-- Interactive slicers
-- KPI cards
-- Data visualization
+- Interactive Slicers
+- KPI Cards
+- Data Visualization
 
 ### Dashboard
 
-The final dashboard includes:
+The final Power BI dashboard includes:
 
 - Total Customers
 - Total Revenue
@@ -63,53 +213,38 @@ The final dashboard includes:
 - Customer Value Distribution by Country
 - Customer Status Distribution
 
-Power BI file: [`Starlink_Analytics.pbix`](power-bi/Starlink_Analytics.pbix)
+### Global Dashboard Metrics
 
-## Analysis
-The project includes a series of analytical tasks covering different aspects of the customer base and revenue performance:
+- **Customers:** 10,001
+- **Total Revenue:** $1,079,934
+- **Average Revenue per Customer:** $107.98
+- **Active Customer Share:** 79.48%
 
-1. Customer distribution by country
-2. Revenue by country
-3. Average revenue per customer by country
-4. Revenue by subscription plan
-5. Discount analysis
-6. Customer value by subscription plan
-7. Discount effectiveness
-8. Customer segmentation by revenue
-9. Customer value by country
-10. Customer value visualization
-11. Customer segment distribution by country
-12. Revenue contribution by country
-13. Customer signups by month
-14. Subscription plan mix by country
-15. Revenue share vs customer share by country
-## Key Findings
+Power BI files:
 
-- Customer distribution is relatively even across countries, with a maximum difference of approximately 10%.
-- Total revenue and average revenue per customer are also relatively consistent across countries.
-- The Residential plan generates the highest total revenue due to its large customer base.
-- Business customers generate the highest average revenue per customer.
-- Customers without discounts generate higher average revenue per customer than customers receiving large discounts.
-- High Value customers represent a smaller share of the customer base but contribute a higher share of total revenue.
-- Japan has the highest average revenue per customer and the highest share of High Value customers.
-- Customer value distribution is relatively consistent across countries.
-## Dashboard
+[Power BI Dashboard](power-bi/Starlink_Analytics.pbix)
 
-The project includes an interactive Google Sheets dashboard
-summarizing key customer and revenue metrics.
+[Power BI Documentation](power-bi/README.md)
 
-The dashboard includes:
+---
 
-- Total customers
-- Total revenue
-- Average revenue per customer
-- High Value customer share
-- Revenue by country
-- Average revenue per customer by country
-- Customer value distribution by country
-## Project Structure
+# Data Quality
+
+During the analysis, a data quality issue was identified:
+
+**1 customer record does not have a matching subscription record.**
+
+The unmatched customer was retained in the customer-level dataset but excluded from subscription-level analysis where a subscription record was required.
+
+This demonstrates an important analytical practice: identifying and documenting data quality issues instead of silently removing records.
+
+---
+
+# Project Structure
+
 ```text
 starlink-google-sheets-analytics/
+│
 ├── analysis/
 │   ├── task-01-customer-distribution.md
 │   ├── task-02-revenue-by-country.md
@@ -123,12 +258,23 @@ starlink-google-sheets-analytics/
 │   ├── task-10-customer-value-visualization.md
 │   ├── task-11-customer-segment-distribution.md
 │   ├── task-12-revenue-contribution-by-country.md
-│   └── task-13-customer-signups-by-month.md
-│   └── task-14-subscription-plan-mix-by-country.md
+│   ├── task-13-customer-signups-by-month.md
+│   ├── task-14-subscription-plan-mix-by-country.md
 │   └── task-15-revenue-share-vs-customer-share-by-country.md
+│
 ├── data/
 │   ├── starlink_customers.csv
 │   └── subscriptions.csv
+│
 ├── dashboard/
-└── google-sheets/
-    └── Starlink_Analytics.xlsx
+│   └── .gitkeep
+│
+├── google-sheets/
+│   ├── .gitkeep
+│   └── Starlink_Analytics.xlsx
+│
+├── power-bi/
+│   ├── README.md
+│   └── Starlink_Analytics.pbix
+│
+└── README.md
