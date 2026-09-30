@@ -31,8 +31,41 @@ The datasets are linked using the customer ID.
 - Data segmentation
 - Data visualization
 - Business analysis
-## Analysis
 
+## Power BI Dashboard
+
+The project includes an interactive Power BI dashboard built on the Starlink customer and subscription datasets.
+
+### Power BI Skills
+
+- Power BI Desktop
+- Data Modeling
+- Power Query
+- DAX
+- Filter Context
+- CALCULATE
+- SUMX / AVERAGEX
+- FILTER
+- Interactive slicers
+- KPI cards
+- Data visualization
+
+### Dashboard
+
+The final dashboard includes:
+
+- Total Customers
+- Total Revenue
+- Average Revenue per Customer
+- Active Customer Share
+- Revenue by Country
+- Revenue by Subscription Plan
+- Customer Value Distribution by Country
+- Customer Status Distribution
+
+Power BI file: [`Starlink_Analytics.pbix`](power-bi/Starlink_Analytics.pbix)
+
+## Analysis
 The project includes a series of analytical tasks covering different aspects of the customer base and revenue performance:
 
 1. Customer distribution by country
